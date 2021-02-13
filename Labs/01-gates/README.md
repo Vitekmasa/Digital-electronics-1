@@ -1,7 +1,10 @@
 # CV1
-[Repositary](https://github.com/Vitekmasa)
 
 ## Task 1
+
+[Repositary](https://github.com/Vitekmasa)
+
+## Task 2
 | **c** | **b** |**a** | **f(c,b,a)** |
 | :-: | :-: | :-: | :-: |
 | 0 | 0 | 0 | 1 |
@@ -27,7 +30,7 @@ end architecture dataflow;
 
 ![Task1](Images/CV1.png)
 
-## Task 2
+## Task 3
 [My code here](https://www.edaplayground.com/x/9Et_)
 
 ```VHDL
