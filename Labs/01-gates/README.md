@@ -1,4 +1,5 @@
 # CV1
+[Depositary](https://github.com/Vitekmasa/Digital-electronics-1)
 ## Task 1
 | **c** | **b** |**a** | **f(c,b,a)** |
 | :-: | :-: | :-: | :-: |
