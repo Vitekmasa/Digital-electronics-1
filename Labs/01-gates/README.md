@@ -2,7 +2,7 @@
 
 ## Task 1
 
-[Repositary](https://github.com/Vitekmasa)
+[Repository](https://github.com/Vitekmasa)
 
 ## Task 2
 | **c** | **b** |**a** | **f(c,b,a)** |
