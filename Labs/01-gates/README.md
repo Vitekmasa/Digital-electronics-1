@@ -23,6 +23,24 @@ begin
 end architecture dataflow;
 ```
 
-![Graph](Images/CV1.png)
+![Task1](Images/CV1.png)
 
 ## Task 2
+[My code here](https://www.edaplayground.com/x/9Et_)
+
+```VHDL
+architecture dataflow of gates is
+begin
+      fa_o <= x_i and (not x_i);
+      fb_o <= x_i or (not x_i);
+      fc_o <= x_i or  x_i  or  x_i  or  x_i;
+      fd_o <= x_i and  x_i  and  x_i  and x_i;
+      fxx_o <= (x_i and  y_i) or (x_i and  z_i);
+      fxy_o <= x_i and (y_i or z_i);
+      fyx_o <= ((x_i or y_i) and (x_i or z_i));
+      fyy_o <= x_i or (y_i and  z_i);
+
+end architecture dataflow;
+```
+
+![Task 2](Images/Task2.png)
