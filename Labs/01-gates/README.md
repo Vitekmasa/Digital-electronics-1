@@ -1,8 +1,13 @@
-# Digital-electronics-1
-## Nadpis druhé úrovně
-```
-git add
-git comand
-```
-### Nadpis třetí úrovně
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+# 01 - Gates
+
+| **c** | **b** |**a** | **f(c,b,a)** |
+| :-: | :-: | :-: | :-: |
+| 0 | 0 | 0 |  |
+| 0 | 0 | 1 |  |
+| 0 | 1 | 0 |  |
+| 0 | 1 | 1 |  |
+| 1 | 0 | 0 |  |
+| 1 | 0 | 1 |  |
+| 1 | 1 | 0 |  |
+| 1 | 1 | 1 |  |
+
