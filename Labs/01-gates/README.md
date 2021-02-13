@@ -1,7 +1,7 @@
 # CV1
-## Task 1
 [Repositary](https://github.com/Vitekmasa)
 
+## Task 1
 | **c** | **b** |**a** | **f(c,b,a)** |
 | :-: | :-: | :-: | :-: |
 | 0 | 0 | 0 | 1 |
