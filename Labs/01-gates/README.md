@@ -1,4 +1,4 @@
-# CV1
+# CV-01-Gates
 
 ## Task 1
 
