@@ -25,10 +25,12 @@
 
 ## Task 2
 
-### K-map equals
+#### K-map equals
 
 ### K-map greater
+
 ### K-map less
+
 ### SoP (Sum of Products)
 
 ### PoS(Product of Sums)
