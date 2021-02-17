@@ -1,6 +1,6 @@
 # CV-02-Logic
 
-## Preparation task ( Task 1)
+## Task 1 (Preparation task)
 
 ### 2-bit comparator truth table
 
