@@ -22,3 +22,15 @@
 | 13 | 1 1 | 0 1 | 1 | 0 | 0 |
 | 14 | 1 1 | 1 0 | 1 | 0 | 0 |
 | 15 | 1 1 | 1 1 | 0 | 1 | 0 |
+
+## Task 2
+
+### K-map equals
+
+### K-map greater
+### K-map less
+### SoP (Sum of Products)
+
+### PoS(Product of Sums)
+
+## Task 3
