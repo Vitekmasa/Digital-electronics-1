@@ -35,10 +35,10 @@
 ### SoP (Sum of Products)
 
 ### PoS(Product of Sums)
-[Code - 2-bit binary comparator](https://www.edaplayground.com/x/VRQh)
+[2-bit binary comparator (Code)](https://www.edaplayground.com/x/VRQh)
 
 ## Task 3
-[Code - 4-bit binary comparator](https://www.edaplayground.com/x/iRss)
+[4-bit binary comparator (Code)](https://www.edaplayground.com/x/iRss)
 
 ```VHDL
 entity comparator_4bit is
