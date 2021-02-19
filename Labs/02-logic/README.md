@@ -1,4 +1,5 @@
 # CV-02-Logic
+[Repository](https://github.com/Vitekmasa)
 
 ## Task 1 (Preparation task)
 
@@ -34,5 +35,7 @@
 ### SoP (Sum of Products)
 
 ### PoS(Product of Sums)
+[Code for 2-bit](https://www.edaplayground.com/x/VRQh)
 
 ## Task 3
+[Code for 4-bit]()
