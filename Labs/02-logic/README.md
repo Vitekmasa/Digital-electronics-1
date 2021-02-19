@@ -35,7 +35,7 @@
 ### SoP (Sum of Products)
 
 ### PoS(Product of Sums)
-[Code for 2-bit](https://www.edaplayground.com/x/VRQh)
+[Code for 2-bit binary comparator](https://www.edaplayground.com/x/VRQh)
 
 ## Task 3
-[Code for 4-bit]()
+[Code for 4-bit binary comparator](https://www.edaplayground.com/x/iRss)
