@@ -39,7 +39,7 @@
 
 ## Task 3
 [4-bit binary comparator (Code)](https://www.edaplayground.com/x/iRss)
-
+### Architecture from design file
 ```VHDL
 entity comparator_4bit is
     port(
@@ -69,6 +69,7 @@ begin
 end architecture Behavioral;
 
 ```
+### Stimulus process from testbench file
 ```VHDL
     begin
         -- Report a note at the begining of stimulus process
@@ -148,7 +149,7 @@ end architecture Behavioral;
 
 end architecture testbench;
 ```
-
+### Simulator console output with one reported error
 ```VHDL
 [2021-02-18 21:57:33 EST] ghdl -i design.vhd testbench.vhd  && ghdl -m  tb_comparator_4bit && ghdl -r  tb_comparator_4bit   
 analyze design.vhd
