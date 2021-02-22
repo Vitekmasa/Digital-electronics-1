@@ -26,11 +26,12 @@
 
 ## Task 2
 
-### K-map equals
+### K-map B equals A
 
-### K-map greater
 
-### K-map less
+### K-map B greater A
+
+### K-map B less A
 
 ### SoP (Sum of Products)
 
