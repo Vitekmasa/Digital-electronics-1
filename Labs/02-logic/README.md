@@ -27,15 +27,15 @@
 ## Task 2
 
 ### K-map B equals A
-![=](/Images/tabA=B.png)
+![=](Images/tabA=B.png)
 ### K-map B greater A
-![>](/Images/tabBA.png)
+![>](Images/tabBA.png)
 ### K-map B less A
-![<](/Images/tabAB.png)
+![<](Images/tabAB.png)
 ### Sum of Products
-![SoP](/Images/SoP.png)
+![SoP](Images/SoP.png)
 ### Product of Sums
-![PoS](/Images/PoS.png)
+![PoS](Images/PoS.png)
 
 
 [2-bit binary comparator (Code)](https://www.edaplayground.com/x/VRQh)
