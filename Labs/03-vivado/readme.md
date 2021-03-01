@@ -2,6 +2,17 @@
 [Repository](https://github.com/Vitekmasa)
 ## Task 1 (Preparation task)
 
+| **c** | **b** |**a** | **f(c,b,a)** |
+| :-: | :-: | :-: | :-: |
+| 0 | 0 | 0 | 1 |
+| 0 | 0 | 1 | 1 |
+| 0 | 1 | 0 | 0 |
+| 0 | 1 | 1 | 0 |
+| 1 | 0 | 0 | 0 |
+| 1 | 0 | 1 | 1 |
+| 1 | 1 | 0 | 0 |
+| 1 | 1 | 1 | 0 |
+
 ## Task 2
 ### VHDL architecture from mux_2bit_4to1
 ```VHDL
