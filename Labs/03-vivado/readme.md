@@ -90,3 +90,4 @@ end architecture testbench;
 ### Simulated time waveforms
 ![Sim](Images/Sim.png)
 ## Task 3
+[Toturial for Vivado](Toturial/Vivado_navod.pdf)
