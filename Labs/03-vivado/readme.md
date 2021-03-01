@@ -3,6 +3,7 @@
 ## Task 1 (Preparation task)
 
 | | **Name of pin for** | |
+| :-: | :-: | :-: |
 | **Num** | **Switch** |  **LED**  |
 | 0 | J15 | H17 |
 | 1 | L16 | K15 |
