@@ -22,5 +22,8 @@
 | F | 1111 | 0 | 1 | 1 | 1 | 0 | 0 | 0 |
 
 ## Task 2
-
+### VHDL architecture from hex_7seg.vhd
+### VHDL stimulus process from tb_hex_7seg.vhd
+### Simulated time waveforms
+### VHDL code from top.vhd
 ## Task 3
