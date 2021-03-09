@@ -21,7 +21,7 @@
 | E | 1110 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
 | F | 1111 | 0 | 1 | 1 | 1 | 0 | 0 | 0 |
 ### Connection of 7-segment displays on Nexys A7 board
-!(Board)[Images/7seg_on_Nexys.png]
+![Board](Images/7seg_on_Nexys.png)
 ## Task 2
 ### VHDL architecture from hex_7seg.vhd
 ```vhdl
@@ -94,7 +94,7 @@ end Behavioral;
        end process p_stimulus;
 ```
 ### Simulated time waveforms
-!(Sim)[Images/Sim.png]
+![Sim](Images/Sim.png)
 ### VHDL code from top.vhd
 ```vhdl
 
