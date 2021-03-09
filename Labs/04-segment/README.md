@@ -100,7 +100,7 @@ end Behavioral;
     begin  
     hex2seg : entity work.hex_7seg
         port map(
-           hex_i   => SW,
+           hex_i      => SW,
            seg_o(6)   => CA,
            seg_o(5)   => CB,
            seg_o(4)   => CC,
