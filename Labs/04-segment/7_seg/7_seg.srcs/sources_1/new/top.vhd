@@ -48,7 +48,7 @@ architecture Behavioral of top is
     begin  
     hex2seg : entity work.hex_7seg
         port map(
-           hex_i   => SW,
+           hex_i      => SW,
            seg_o(6)   => CA,
            seg_o(5)   => CB,
            seg_o(4)   => CC,
@@ -60,5 +60,28 @@ architecture Behavioral of top is
 
         AN <= b"1111_0111";
         LED(3 downto 0) <= SW;
-
-end Behavioral;
+    
+        LED(4) <= '1' when (SW = "0000") else '0';
+        
+        LED(5) <= '1' when (SW = "1010") else '0',
+              '1' when (SW = "1011") else '0',
+              '1' when (SW = "1100") else '0',
+              '1' when (SW = "1101") else '0',
+              '1' when (SW = "1110") else '0',
+              '1' when (SW = "1111") else '0';
+              
+        LED(6) <= '1' when (SW = "0001") else '0',
+              '1' when (SW = "0011") else '0',
+              '1' when (SW = "0101") else '0',
+              '1' when (SW = "0111") else '0',
+              '1' when (SW = "1001") else '0',
+              '1' when (SW = "1011") else '0',
+              '1' when (SW = "1101") else '0',
+              '1' when (SW = "1111") else '0';
+           
+        LED(7) <= '1' when (SW = "0001") else '0',
+              '1' when (SW = "0010") else '0',
+              '1' when (SW = "0100") else '0',
+              '1' when (SW = "1000") else '0';
+                
+end architecture Behavioral;
