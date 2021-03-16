@@ -77,8 +77,8 @@ p_cnt_up_down : process(clk)
 ```
 
 ### Simulated time waveforms
-![Sim1]()
-![Sim2]()
+![Sim1](Sim1.png)
+![Sim2](Sim2.png)
 ## Task 3
 ### VHDL code from top.vhd
 ```vhdl
@@ -124,4 +124,5 @@ begin
 ```
 
 ### Image of the 4-bit bidirectional counter and a 16-bit counter
-![Img1]()
+![Img1](Img1.png)
+![Img2](Img2.png)
