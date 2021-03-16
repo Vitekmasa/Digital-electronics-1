@@ -22,5 +22,20 @@
    | 1&nbsp;sec | 100 000 000 | `x"5F5_E100"` | `b"0101_1111_0101_1110_0001_0000_0000"` |
    
 ## Task 2
+### VHDL process from p_cnt_up_down.vhd
+```vhdl
+```
+### VHDL processes from tb_cnt_up_down.vhd
+```vhdl
+```
 
+### Simulated time waveforms
+![Sim1]()
+![Sim2]()
 ## Task 3
+### VHDL code from top.vhd
+```vhdl
+```
+
+### Image of the 4-bit bidirectional counter and a 16-bit counter
+![Img1]()
