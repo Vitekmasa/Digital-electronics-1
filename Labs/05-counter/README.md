@@ -5,11 +5,11 @@
 ### Connection of push buttons on Nexys A7 board
 | **PIN** | **PORT** | **PUSHED-SIGNAL** |
 | :-: | :-: | :-: |
-| M17 | BTNR | 1 |
-| N17 | BTNC | 1 |
 | P17 | BTNL | 1 |
+| M17 | BTNR | 1 |
 | M18 | BTNU | 1 |
 | P18 | BTND | 1 |
+| N17 | BTNC | 1 |
 
 ### Clculated values of periods
 | **Time interval** | **Number of clk periods** | **Number of clk periods in hex** | **Number of clk periods in binary** |
