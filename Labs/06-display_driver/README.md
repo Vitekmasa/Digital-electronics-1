@@ -142,7 +142,7 @@ begin
   
 end architecture testbench;
 ```
-
+### Simulated time waveforms
 ![Sim1](Images/Sim1.png)
 ![Sim2](Images/Sim2.png)
 
