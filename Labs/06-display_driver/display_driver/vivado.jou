@@ -11,3 +11,14 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/frost/Desktop/DE1/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_driver_7seg_4digits.tcl
+close_sim
+launch_simulation
+source tb_driver_7seg_4digits.tcl
+run all
+close_sim
+launch_simulation
+source tb_driver_7seg_4digits.tcl
+close_sim
