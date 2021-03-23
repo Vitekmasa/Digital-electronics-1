@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Mar 23 15:31:32 2021
+# Process ID: 14440
+# Current directory: C:/Users/Medek/Desktop/Study/DE1/DE1_cv/Digital-electronics-1/Labs/06-display_driver/display_driver
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12088 C:\Users\Medek\Desktop\Study\DE1\DE1_cv\Digital-electronics-1\Labs\06-display_driver\display_driver\display_driver.xpr
+# Log file: C:/Users/Medek/Desktop/Study/DE1/DE1_cv/Digital-electronics-1/Labs/06-display_driver/display_driver/vivado.log
+# Journal file: C:/Users/Medek/Desktop/Study/DE1/DE1_cv/Digital-electronics-1/Labs/06-display_driver/display_driver\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Medek/Desktop/Study/DE1/DE1_cv/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.xpr
+update_compile_order -fileset sources_1
