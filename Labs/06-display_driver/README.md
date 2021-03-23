@@ -201,4 +201,4 @@ end architecture Behavioral;
 ```
 
 ## Task 3
-![8_dig](Images/8_dig.png)
+![8_dig](Images/8_dig.jpg)
