@@ -2,7 +2,7 @@
 [Repository](https://github.com/Vitekmasa)
 
 ## Task 1 (Preparation task)
-![Img](Images/Img1.png)
+![Img](Images/Img3.png)
 ```vhdl
 {
   signal:
