@@ -4,9 +4,10 @@
 ## Task 1 (Preparation task)
 ### Characteristic equations for D, JK, T flip-flops
 ```vhdl
-D flip flop: q_(n+1) = d
-JK flip flop: q_(n+1) = j * (not q_n) + (not k) * q_n
-T flip flop: q_(n+1) = t * (not q_n) + (not t) * q_n
+flip flops:
+D: q_(n+1) = d
+JK: q_(n+1) = j * (not q_n) + (not k) * q_n
+T: q_(n+1) = t * (not q_n) + (not t) * q_n
 ```
 
 ### Characteristic table for D flip-flops
