@@ -526,5 +526,5 @@ end Behavioral;
 ![t_ff_rst](Images/Img5.png)
 
 ## Task 4
-### VHDL process of p_mux
+### Schematic of register using D flip-flops
 ![Img](Images/Img6.jpg)
