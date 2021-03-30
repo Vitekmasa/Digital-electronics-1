@@ -50,32 +50,48 @@ T flip flop: q_(n+1) = t * (not q_n) + (not t) * q_n
 ![Sim1](Images/Sim1.png)
 
 ## Task 3
-### VHDL process of p_d_ff_arst
+### D flip-flop with async reset
+#### VHDL process of p_d_ff_arst
 ```vhdl
 
 ```
 
-### VHDL process of p_d_ff_rst
+#### VHDL process of p_d_ff_arst
 ```vhdl
 
 ```
 
-### VHDL process of p_jk_ff_rst
+#### Simulated time waveforms
+![Sim1](Images/Sim1.png)
+
+### D flip-flop with sync reset
+#### VHDL process of p_d_ff_rst
+```vhdl
+
+```
+#### Simulated time waveforms
+
+### JK flip-flop (sync reset)
+#### VHDL process of p_jk_ff_rst
 ```vhdl
 
 ```
 
-### VHDL process of p_t_ff_rst
+#### Simulated time waveforms
+![Sim1](Images/Sim1.png)
+
+### T flip-flop wtih sync reset
+#### VHDL process of p_t_ff_rst
 ```vhdl
 
 ```
 
-### VHDL testbench of tb_
+#### VHDL testbench of tb_
 ```vhdl
 
 ```
 
-### Simulated time waveforms
+#### Simulated time waveforms
 ![Sim1](Images/Sim1.png)
 
 ## Task 4
