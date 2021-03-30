@@ -527,4 +527,4 @@ end Behavioral;
 
 ## Task 4
 ### VHDL process of p_mux
-![Img](Images/Img6.png)
+![Img](Images/Img6.jpg)
