@@ -143,7 +143,7 @@
 | `SOUTH_WAIT` | yellow | red | 2 sec | n/c |
 
 ### State digram
-![state2](Images/Img5.png)
+![state2](Images/Img6.png)
 
 ### VHDL sequential process of p_smart_traffic_fsm
 ```vhdl
