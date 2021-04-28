@@ -25,26 +25,18 @@ architecture Behavioral of tlc is
     signal s_state  : t_state;
     signal s_en     : std_logic;
     signal   s_cnt  : unsigned(5 - 1 downto 0);
-
-    -- Specific values for local counter
+    
     constant c_DELAY_4SEC : unsigned(5 - 1 downto 0) := b"1_0000";
     constant c_DELAY_2SEC : unsigned(5 - 1 downto 0) := b"0_1000";
     constant c_DELAY_1SEC : unsigned(5 - 1 downto 0) := b"0_0100";
     constant c_ZERO       : unsigned(5 - 1 downto 0) := b"0_0000";
-
-    -- Output values
+    
     constant c_RED        : std_logic_vector(3 - 1 downto 0) := b"100";
     constant c_YELLOW     : std_logic_vector(3 - 1 downto 0) := b"110";
     constant c_GREEN      : std_logic_vector(3 - 1 downto 0) := b"010";
 
 begin
 
-    --------------------------------------------------------------------
-    -- Instance (copy) of clock_enable entity generates an enable pulse
-    -- every 250 ms (4 Hz). Remember that the frequency of the clock 
-    -- signal is 100 MHz.
-    
-    -- JUST FOR SHORTER/FASTER SIMULATION
     s_en <= '1';
 --    clk_en0 : entity work.clock_enable
 --        generic map(
