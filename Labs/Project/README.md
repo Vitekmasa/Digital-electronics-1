@@ -1,9 +1,9 @@
 # Car parking sensor
 
 ### Team members:
-Masauso Lungu
-Tomáš Marčák
-Vladimír Lukáč
+Masauso Lungu,
+Tomáš Marčák,
+Vladimír Lukáč,
 Vít Maša 
 
 [Link to your GitHub project folder]( http://github.com/xxx)
