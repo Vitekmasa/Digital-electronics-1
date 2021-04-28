@@ -43,7 +43,21 @@ As visual signalization we choose 10 segment LED bargraph, where are 5 green seg
 ##### LED_bar_control_unit
 
 ## TOP module description and simulations
-
+# Není správně, musí se pak převyplnit!!
+| **Port name** | **Direction** | **Type** | **Description** |
+   | :-: | :-: | :-: | :-- |
+   | `CLK100MHZ` | input | `std_logic` | Main clock |
+   | `BTNC` | input | `std_logic` | Synchronous reset |
+   | `SW` | input  | `std_logic_vector(16 - 1 downto 0)` | Four 4-bit values |
+   | `CA` | output | `std_logic` | Cathod A |
+   | `CB` | output | `std_logic` | Cathod B |
+   | `CC` | output | `std_logic` | Cathod C |
+   | `CD` | output | `std_logic` | Cathod D |
+   | `CE` | output | `std_logic` | Cathod E |
+   | `CF` | output | `std_logic` | Cathod F |
+   | `CG` | output | `std_logic` | Cathod G |
+   | `DP` | output | `std_logic` | Decimal point |
+   | `AN` | output | `std_logic_vector(8 - 1 downto 0)` | Common anode signals to individual displays |
 ### Top_car_parking_assistant
 
 
