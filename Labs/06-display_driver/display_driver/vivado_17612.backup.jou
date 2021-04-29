@@ -2,12 +2,23 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Apr 28 23:46:59 2021
-# Process ID: 16256
+# Start of session at: Tue Mar 23 18:45:28 2021
+# Process ID: 17612
 # Current directory: C:/Users/frost/Desktop/DE1/Digital-electronics-1/Labs/06-display_driver/display_driver
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15688 C:\Users\frost\Desktop\DE1\Digital-electronics-1\Labs\06-display_driver\display_driver\display_driver.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14280 C:\Users\frost\Desktop\DE1\Digital-electronics-1\Labs\06-display_driver\display_driver\display_driver.xpr
 # Log file: C:/Users/frost/Desktop/DE1/Digital-electronics-1/Labs/06-display_driver/display_driver/vivado.log
 # Journal file: C:/Users/frost/Desktop/DE1/Digital-electronics-1/Labs/06-display_driver/display_driver\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/frost/Desktop/DE1/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_driver_7seg_4digits.tcl
+close_sim
+launch_simulation
+source tb_driver_7seg_4digits.tcl
+run all
+close_sim
+launch_simulation
+source tb_driver_7seg_4digits.tcl
+close_sim
