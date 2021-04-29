@@ -20,6 +20,8 @@ The Arty A7 is fully compatible with the high-performance Vivado ® Design Suite
 
 ![](Images/arty_2.png)
 
+We thought to use Pmod connectors, but they have only 3.3V VCC and HC-SR04 need to be powered by 5V. So we decided to use Arduino/chipKIT Shield Connector which have two pins with 3.3V VCC and 5.0V VCC outputs.
+
 ![](Images/arty_pins.png)
 
 #### HC-SR04 ultrasonic sensor
