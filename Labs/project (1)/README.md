@@ -6,7 +6,7 @@ Vladimír Lukáč, Masauso Lungu, Tomáš Marčák, Vít Maša
 Link to our GitHub project folder: [Project folder](https://github.com/tmarcak/Digital-electronics-1)
 
 ### Project objectives
-
+Main objective of the project from the subject Digital electronic was to create a parking assistant with HC-SR04 ultrasonic sensor, sound signaling using PWM, signaling by LED bargraph and this all controled by Arty A7. The sensor measures a distance from 2cm to 4m, but in our project we used measurements only up to 1,5m. All codes, testbenches and simlation are created in Vivado. Desingnes of boards are created in Autodesk Eagle.
 
 # Hardware description
 
@@ -29,6 +29,9 @@ We thought to use Pmod connectors, but they have only 3.3V VCC and HC-SR04 need 
 The HC-SR04 ultrasonic sensor uses sonar to determine distance to an object like bats do. 
 It offers excellent non-contact range detection with high accuracy and stable readings in an easy-to-use package. 
 It comes complete with ultrasonic transmitter and receiver modules. This sensor is very popular among the Arduino tinkerers. [2]
+The sensor expects 10us long pulses, based on which it sends ultrasonic pulses and rigesters their reflection. The sensor returnt an acho pulse with a width corresponding to the distance of blockade from the sensor. Conversion for distance is : echo pulse length / 58. Distance is in cm.
+
+As is mentioned above, the sensor must be powered by 5V, so we choose to use Arduino/chipKIT Shield Connector which have pin with 5V, so we can powered the sensor from this pin.
 
 ![](Images/sensor.png)
 
@@ -54,8 +57,7 @@ Simple change the frequency of the voltage sent to the piezo and it will start g
 ![](Images/buzzer.png)
 
 #### LED bargraph
-As visual signalization we chose 10 segment LED bargraph, where are 5 green segment which signalizated there is lots of free space (3m - 1,6m), 3 yellow segment which signalizated correct possition for parking (1,6m - 1m) and 2 red segments which signalizated there is not enought space and you have to stop or you can crash your car. 
-Correct possition for parking in city is middle yellow segment, because you must keep a distance of at least 1.2m between the vehicles for safe leave, but when you park in home garage, you can park closser to safe space.
+As visual signalization we chose 10 segment LED bargraph, where are 5 green segment which signalizated there is lots of free space (1,5m - 0,5m), 3 yellow segment (0,5m - 0,2m) and 2 red segments (0,2m - 0m) which signalizated there is not enought space and you have to stop or you can crash your car. We decided to make first green LED glow when car distance is between 1,5m and 1,2m and second if you reach 1,2m because you must let 1,2m space when you are parking next to car for handicapped.
 
 ![](Images/led_bar.png)
 
@@ -64,17 +66,24 @@ Correct possition for parking in city is middle yellow segment, because you must
 ![](Images/pin_cables.jpg)
 
 ## VHDL modules description and simulations
-
 #### HC-SR04 Ultrasonic sensor
+The sensor control is divided into two blocks.
+
 #### Sensor_control_unit
+The '''Sensor_contro_unit''' module directly controls the HC-SR04 sensor. It emits and appropriately long pulse and calculates the response.
+
 #### Sensor_logic_unit
+The '''Sensor_logic_unit''' module controls when the pulses is sent to the sensor and processes the returned distance. Module converts returned distance to 10 levels, which are sent to '''Buzzer_control_unit''' and '''LED_bar_contorl_unit''' modules.
+
 #### Buzzer
 #### Buzzer_control_unit
-#### LED bar
+The '''Buzzer_control_unit''' module has 3 inputs and one output. First input is enable signal which determines if module is function or not. Second input is distance level from '''Sensor_logic_unit''' represented by 4-bit logic vector. Third input is a 100MHz clock signal. The output is PWM modulated waveform for piezo buzzer. Architecture of module is created by two sequentinal processes. First process '''p_clk''' secured clock and second process '''p_buzzer''' make PWM modulation. First it checks if enbale signal is ON and when it is ON then it determines distance level and starts appropriate couter with proper pulse width.
+
+#### LED bar graph
 #### LED_bar_control_unit
+The '''LED_bar_control_unit''' module has 2 inputs and 1 output. First input is enable signal, which determines if module is function or not. Second input is distance level from '''Sensor_logic_unit''' represented by 4-bit logic vector. The output is 10-bit logic vector, 1-bit for 1 level of distance, which is send to LED bar graph. Process in this module is simple. First it checks if enbale signal is ON and when it is ON then determine distance level and light up the specific LEDs. If enable signal is OFF then it switch OFF all the LEDs.
 
 # TOP module description and simulations
-
 ## Top module diagram
 
 ![](Images/top_parking_assistant_diagram_final.png).
@@ -92,3 +101,5 @@ Correct possition for parking in city is middle yellow segment, because you must
    3. LED bar grapg image. In: amazon.com [online]. Available here: [LED bar graph](https://www.amazon.com/Single-Segment-Display-Colors-Arduino/dp/B07BJ8ZGP7)
    4. Buzzer image. In: amazon.com [online]. Available here: [Buzzer](https://www.amazon.com/mxuteuk-Electronic-Computers-Printers-Components/dp/B07VK1GJ9X/ref=sr_1_3?dchild=1&keywords=passive+piezo+buzzer+3%2C3V&qid=1619639466&sr=8-3)
    5. Pin cabels image. In: amazon.com [online]. Available here: [Pin cabels](https://www.amazon.com/EDGELEC-Breadboard-Optional-Assorted-Multicolored/dp/B07GD1XFWV/ref=sr_1_3?dchild=1&keywords=pin+cables&qid=1619639534&sr=8-3)
+   6. Study materials. In: secs.oakland.edu [online]. Available here: [Study materials](https://www.secs.oakland.edu/~llamocca/Courses/ECE4710/W20/FinalProject/Group2_ultrasound2audio.pdf)
+   7. Study materials and previous expirience. In: github.com [online]. Available here: [Study materials](https://github.com/tomas-fryza/Digital-electronics-1)
