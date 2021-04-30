@@ -67,21 +67,21 @@ As visual signalization we chose 10 segment LED bargraph, where are 5 green segm
 
 ## VHDL modules description and simulations
 #### HC-SR04 Ultrasonic sensor
-The sensor control is divided into two blocks.
+The sensor control is divided into two blocks `Sensor_contro_unit` and `Sensor_logic_unit`.
 
 #### Sensor_control_unit
-The '''Sensor_contro_unit''' module directly controls the HC-SR04 sensor. It emits and appropriately long pulse and calculates the response.
+The `Sensor_contro_unit` module directly controls the HC-SR04 sensor. It emits and appropriately long pulse and calculates the response.
 
 #### Sensor_logic_unit
-The '''Sensor_logic_unit''' module controls when the pulses is sent to the sensor and processes the returned distance. Module converts returned distance to 10 levels, which are sent to '''Buzzer_control_unit''' and '''LED_bar_contorl_unit''' modules.
+The `Sensor_logic_unit` module controls when the pulses is sent to the sensor and processes the returned distance. Module converts returned distance to 10 levels, which are sent to `Buzzer_control_unit` and `LED_bar_contorl_unit` modules.
 
 #### Buzzer
 #### Buzzer_control_unit
-The '''Buzzer_control_unit''' module has 3 inputs and one output. First input is enable signal which determines if module is function or not. Second input is distance level from '''Sensor_logic_unit''' represented by 4-bit logic vector. Third input is a 100MHz clock signal. The output is PWM modulated waveform for piezo buzzer. Architecture of module is created by two sequentinal processes. First process '''p_clk''' secured clock and second process '''p_buzzer''' make PWM modulation. First it checks if enbale signal is ON and when it is ON then it determines distance level and starts appropriate couter with proper pulse width.
+The `Buzzer_control_unit` module has 3 inputs and one output. First input is enable signal which determines if module is function or not. Second input is distance level from `Sensor_logic_unit` represented by 4-bit logic vector. Third input is a 100MHz clock signal. The output is PWM modulated waveform for piezo buzzer. Architecture of module is created by two sequentinal processes. First process `p_clk` secured clock and second process `p_buzzer` make PWM modulation. First it checks if enbale signal is ON and when it is ON then it determines distance level and starts appropriate couter with proper pulse width.
 
 #### LED bar graph
 #### LED_bar_control_unit
-The '''LED_bar_control_unit''' module has 2 inputs and 1 output. First input is enable signal, which determines if module is function or not. Second input is distance level from '''Sensor_logic_unit''' represented by 4-bit logic vector. The output is 10-bit logic vector, 1-bit for 1 level of distance, which is send to LED bar graph. Process in this module is simple. First it checks if enbale signal is ON and when it is ON then determine distance level and light up the specific LEDs. If enable signal is OFF then it switch OFF all the LEDs.
+The `LED_bar_control_unit` module has 2 inputs and 1 output. First input is enable signal, which determines if module is function or not. Second input is distance level from `Sensor_logic_unit` represented by 4-bit logic vector. The output is 10-bit logic vector, 1-bit for 1 level of distance, which is send to LED bar graph. Process in this module is simple. First it checks if enbale signal is ON and when it is ON then determine distance level and light up the specific LEDs. If enable signal is OFF then it switch OFF all the LEDs.
 
 # TOP module description and simulations
 ## Top module diagram
